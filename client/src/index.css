@@ -1,11 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* small helpful defaults */
+/* Global styles without @apply */
 body {
-  @apply bg-gray-50 text-gray-800 min-h-screen;
+  background-color: #f9fafb; /* gray-50 */
+  color: #1f2937;            /* gray-800 */
+  min-height: 100vh;
 }
+
 a {
-  @apply text-blue-600 hover:text-blue-800 transition-colors;
+  color: #2563eb; /* blue-600 */
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8; /* blue-800 */
 }
